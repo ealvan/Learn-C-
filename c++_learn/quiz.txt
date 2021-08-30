@@ -1,0 +1,84 @@
+1. When I create an instance of a class using new,
+    where is the class created?
+
+It's in heap memory.Run time execution.
+On the free store. This is the same as it would
+be if you allocated for an int using
+new. 
+
+
+2. My class has a raw pointer int* that contains
+    a dynamically allocated array of
+    integers. Does sizeof report different sizes 
+    depending on the number of integers
+    in the dynamic array?
+
+No, Its constant, for 4 bytes.
+. sizeof() calculates the size of a class on the basis of the declared data members.
+As the sizeof(pointer) is constant and independent of the mass of data being
+pointed to, the sizeof(Class) containing one such pointer member remains constant as well.
+
+
+3. All my class members are private, 
+    and my class does not contain any declared
+    friend class or function. Who can 
+    access these members?
+
+Inside of his class, you can acces to class members.
+None except member methods of the same class.
+
+4. Can one class member method invoke another?
+    Yes, it can.
+
+5. What is a constructor good for?
+    Good for build or instance a object in stack memory or heap memory.
+    A constructor is typically used to initialize data members and resources.
+
+6. What is a destructor good for?
+    It's good for deallocate memory from stack memory or heap memory.
+    Destructors are typically used for releasing resources and deallocating memory
+    
+--------------------------------------------------------------------
+1. BUG BUSTERS: What is wrong in the following class declaration?
+"C"lass Human
+{
+ int age;
+ string name;
+public:
+ Human() {}
+}";"
+//No acces to his members via members methods
+2. How would the user of the class in 
+    Exercise 1 access member Human::age?
+
+    With members methods or friend functions.
+    . As Human::Age is a private member (remember 
+    members of a class are private by default as 
+    opposed to those in a struct) and as there is no public 
+    accessor function, there is no way that the 
+    user of this class can access Age.
+
+3. Write a better version of the class seen 
+    in Exercise 1 that initializes all parameters
+    using an initialization list in the constructor.
+class Human
+{
+ int age;
+ string name;
+public:
+ Human(int age_, string name_):age(age_),name(name_) {}
+};
+
+
+4. Write a class Circle that computes the area 
+    and circumference given a radius
+    that is supplied to the class as a parameter 
+    at the time of instantiation. Pi should be
+    contained in a constant private member that 
+    cannot be accessed from outside the
+    circle
+
+// GO TO -> circle_exercises.cpp 
+
+
+
