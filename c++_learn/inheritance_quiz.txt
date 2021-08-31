@@ -1,0 +1,62 @@
+1. I want some base class members to be accessible 
+to the derived class but not outside the class 
+hierarchy. What access specifier do I use?
+
+    You can use "protected" inheritance, because
+    it enables to mebers methods in the section
+    public, and protected. And it's dont access
+    outside the class.
+
+    > Use access specifier "protected" to ensure that 
+    a member of the base class is visible to the 
+    derived class, but not to one with an 
+    instance of the same.
+
+2. If I pass an object of the derived class 
+as an argument to a function that takes a
+parameter of the base class by value, what happens?
+
+    It's an example called "Slicing Problem"
+    Because this lose this data, when by default the compiler 
+    cast automatically this object to base class.
+    Also call a copy constructor if there is in base class.
+    If you use this cast object, you can't use 
+    the methods of derived class.
+
+    >.The base part of the derived class object gets 
+    copied and passed as an argument.
+    The resulting behavior due to “slicing” can be unpredictable.
+
+3. Which one should I favor? Private inheritance or composition?
+
+    I dont know, but I like private, because I know his behavior.
+    But composition it's for simmple cases like 
+    other version of a function member in the base class.
+    
+    > Composition for design flexibility
+
+4. How does the "using" keyword help me in an inheritance hierarchy?
+    
+    The "using" keyword is for unhide baseclass's methods.
+    So, a derived class can use baseclass methods.
+
+    > Use it to unhide base class methods.
+
+5. A class Derived inherits "private" from class Base. Another class
+    SubDerived inherits public from class Derived. Can SubDerived access
+    public members of class Base?
+
+    NO, because the "private" inheritance is 
+    only for the derived class, that can use this members.
+    So, you dont have access to members in second level of derived class.
+    Only in the first of derived class.
+
+    > No, because the first class that specializes 
+    Base—that is, class Derived—has a
+    private inheritance relationship with Base. 
+    Thus, public members of class Base are
+    private to class SubDerived, hence are not accessible.
+
+
+
+

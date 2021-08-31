@@ -1,0 +1,63 @@
+1. In what order are the constructors 
+invoked for class Platypus as shown in
+Listing 10.10?
+
+    First Mammal,
+    Second, Reptile
+    Third, Bird
+
+2. Show how a class Polygon, class Triangle, 
+    and class Shape are related to each other
+    
+    > class Shape
+        {
+            // ... Shape members
+        };
+        class Polygon: public Shape
+        {
+            // ... Polygon members
+        }
+        class Triangle: public Polygon
+        {
+            // ... Triangle members
+        }
+    //go to shape_exercise.cpp
+
+3. class D2 inherits from class D1, which inherits from class Base. To keep D2
+from accessing the public members in Base, what access specifier would you use
+and where would you use it?
+    
+    The inheritance relationship between 
+    class D1 and Base should be private to
+    restrict class D2 from accessing the 
+    public members of Base. 
+    I could use "protected" especifier, because permit access
+    for members in any level of derived class.
+    Also i could use public, because also permit this access.
+
+4. What is the nature of inheritance with this code snippet?
+    > //is by default "private" especifier NOT "public".
+    >> Rpta: Classes inherit private by default. 
+        If Derived had been a struct, 
+        that inheritance would’ve been public.
+    class Derived: Base
+    {
+    // ... Derived members
+    };
+
+5. BUG BUSTERS: What is the problem in this code:
+    class Derived: public Base
+    {
+        // ... Derived members
+    };
+    void SomeFunc (Base value)
+    {
+        // …
+    }
+    >> When you pass, Derived object on
+    function SomeFunc(), this action, performs 
+    a slicing problem, because lose data
+    int this dump process if you use heap memory
+    and not stack memory
+
+
