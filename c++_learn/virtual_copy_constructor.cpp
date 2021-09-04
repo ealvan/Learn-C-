@@ -5,49 +5,65 @@ class Fish{
     public:
         virtual Fish* clone() = 0;
         virtual void swim() = 0;
-        virtual ~Fish() = 0;
+        virtual ~Fish(){
+            cout << "Fish destructor"<<endl;
+        };
 };
-class Tuna:public Fish{
+
+class Tuna: public Fish{
     public:
-        Fish* clone() override{
+        Fish* clone() override {
             return new Tuna(*this);
         }
-        void swim(){
-            cout << "Tuna swim"<<endl;
+        void swim() final override{
+            cout << "Tuna swims fast in the sea"<<endl;
+        }
+        ~Tuna(){
+            cout << "Tuna destructor"<<endl;
         }
 };
-class BluefinTuna final: public Fish{
+class BluefinTuna final: public Tuna{
     public:
-        Fish* clone() final override{
+        Fish* clone() override{
             return new BluefinTuna(*this);
-        } 
+        }
+        ~BluefinTuna(){
+            cout << "Bluefintuna destructor"<<endl;
+        }
 };
 class Carp final: public Fish{
     public:
         Fish* clone() override{
             return new Carp(*this);
         }
-        void swim() override final{
-            cout << "Carp swim slow in lake"<<endl;
+        void swim() override{
+            cout << "Carp swims slow in the lake"<<endl;
+        }
+        ~Carp(){
+            cout << "Carp destructor"<<endl;
         }
 };
-int main(){
-    const int NUMBER_FISHES = 4;
-    Fish* arr = new Fish[NUMBER_FISHES];
-    arr[0] = new Tuna();
-    arr[1] = new Carp();
-    arr[0] = new BluefinTuna();
-    arr[0] = new Carp();
 
-    Fish* myNewFishes[NUMBER_FISHES];
-    for(int index = 0; index < NUMBER_FISHES; index++){
-        myNewFishes[index] = arr[index]->clone();
-    }   
-    for(int index = 0; index < NUMBER_FISHES; index++){
-        myNewFishes[index]->swim();
+int main(){
+    const int FISHES = 4;
+    Fish* pecera[FISHES] = {NULL};
+    pecera[0] = new Carp();
+    pecera[1] = new Tuna();
+    pecera[2] = new Carp();
+    pecera[3] = new BluefinTuna();
+    //clone my pecera, on other pecera
+    Fish* clones[FISHES]; 
+    for(int i = 0; i < FISHES; i++){
+        clones[i] = pecera[i]->clone();
     }
-    for(int index = 0; index < NUMBER_FISHES; index++){
-        delete myNewFishes[index];
-        delete arr[index];
+    //swim my clone fishes
+    for(int i = 0; i < FISHES; i++){
+        clones[i]->swim();
+    }
+    // delete pecera adn clones fishes
+    for(int i = 0; i < FISHES; i++){
+        delete clones[i];
+        delete pecera[i];
     }
 }
+
