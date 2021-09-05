@@ -1,0 +1,59 @@
+1.  You are modeling shapes—circle 
+    and triangle—and want every shape to
+    compulsorily implement functions Area() 
+    and Print(). How would you do it?
+
+    You want to implement a "abstract method"
+    on shape and then overwrite this method.
+    goto virtual_shape.cpp
+
+2.  Does a compiler create a 
+    Virtual Function Table for all classes?
+
+    No, only for objects, and it's foe each object, has a VFT
+    No. It creates a VFT only for those classes that contain virtual functions.
+
+3.  My class Fish has two public methods, 
+    one pure virtual function, and some
+    member attributes. Is it still 
+    an abstract base class?
+
+    Yes, as it still cannot be instantiated. As long as a class has at least one pure virtual
+    function, it remains an ABC irrespective of the presence or absence of other fully
+    defined functions or parameters.
+
+EXERCISES:
+1. Demonstrate an inheritance hierarchy that 
+    implements the question in Quiz 1 for
+    Circle and Triangle.
+    goto virtual_shape.cpp
+
+2. BUG BUSTERS: What is the problem in the following code:
+class Vehicle
+{
+public:
+ Vehicle() {}
+ *virtual* ~Vehicle(){}
+};
+class Car: public Vehicle
+{
+public:
+ Car() {}
+ ~Car() {}
+};
+//There are not errors
+>>>> Missing virtual destructor!
+
+3.  In the (uncorrected) code in Exercise 2, 
+    what is the order of execution of constructors 
+    and destructors if an instance of car is 
+    created and destroyed like this:
+//Not implements virtual destructor, so
+//Onlye delete Vehicle() not Car()
+Vehicle* pMyRacer = new Car;
+delete pMyRacer;
+
+1. Car constructor
+2. Vehicle constructor
+3. Vehicle constructor
+4. Car constructor
