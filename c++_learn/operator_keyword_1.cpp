@@ -85,6 +85,5 @@ int main(){
         string strHoliday(static_cast<const char*>(Holiday));
         strHoliday=static_cast<const char*>(Date(11,11,2016));
     */
-
 }
 

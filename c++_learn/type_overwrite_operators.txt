@@ -1,0 +1,68 @@
+1. Can my subscript operator [] return const and non-const variants of return
+types?
+
+const Type& operator[](int index);
+Type& operator[](int index); // is this OK?
+-> Yes, you can! WRONG ANSWER
+->No, C++ does not allow two functions with the same name to have different return
+values. You can program two implementations of operator [] with identical return
+types, one defined as a const function and the other not. In this case, C++ compiler picks the non-const version for assignment-related activities and the const
+version otherwise:
+    const Type& operator[](int index) const;
+    Type& operator[](int index); // is this OK?
+
+2. Would you ever declare the copy constructor or copy assignment operator as
+private?
+
+-> Yes, but only if I don't wnat my class to allow copying or assignment.
+    Like singleton design, this don't permit copying or assignment.
+    —a class that permits the existence of only one instance
+    . Listing 9.10 in Lesson 9, “Classes and Objects,”
+    contains a demonstration of a singleton class.
+
+3. Would it make sense to define a move constructor and move assignment operator
+for your class Date?
+
+
+-> You could made this, but this type of data are short and not save big data.
+ But you can do it. WRONG ANSWER
+->  As there are no dynamically allocated 
+    resources contained within class Date that
+    cause unnecessary memory allocation and 
+    deallocation cycles within the copy 
+    constructor or copy assignment operator, 
+    this class is not a good candidate for a move
+    constructor or move assignment operator
+    In resume, If there are no dynamically allocated resources
+    Then, it's not a good candidate for move assignment
+
+Exercises:
+
+1.  Program a conversion operator for 
+    class Date that converts the date it holds into a
+    unique integer.
+GOTO  "date_exercise.cpp"
+class Date
+{
+ int day, month, year;
+public:
+ explicit operator int()
+ {
+return ((year * 10000) + (month * 100) + day);
+ }
+ // constructor etc
+};
+
+2. Program a move constructor and move assignment operator for class
+DynIntegers that encapsulates a dynamically allocated array in the form of
+ private member int*.
+
+
+
+
+
+
+
+
+
+
