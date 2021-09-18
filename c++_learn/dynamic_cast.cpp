@@ -28,7 +28,6 @@ void detectTypeFish(Fish* f){
         t->talk();
     }
     f->swim();//virtual function
-
 }
 int main(){
     // when a derived object is passed to function with
@@ -45,6 +44,4 @@ int main(){
     Carp c;
     Fish f;
     detectTypeFish(&t);
-
-    
 }

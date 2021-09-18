@@ -1,0 +1,70 @@
+Quiz
+1.  You have a base class object pointer objBase.
+    What cast would you use to determine 
+    whether it is a Derived1 type 
+    or a Derived2 type?
+
+    I could use dinamyc_cast, because I dont know
+    what type od Derived Obj is.
+    >dynamic_cast.
+
+2.  You have a const reference to an 
+    object and tried calling a public member
+    function, written by you. 
+    The compiler does not allow this 
+    because the function in question is not a const member. 
+    Would you correct the function or would you use
+    const_cast?
+
+    I must correct this function, because it's mine.
+    If his function is library or third code you could use
+    const_cast<>();
+    > 2. Correct the function, 
+    > of course. const_cast and 
+    > casting operators in general
+    > should be a last resort.
+
+3.  reinterpret_cast should be used only 
+    when static_cast does not work, and
+    the cast is known to be required and safe. 
+    True or false?
+
+    True, this reinterpret_cast is a reinterpretation 
+    of one object, so you can use for share raw data.
+    But is unsafe.
+    > True.
+
+4.  Is it true that many instances of 
+    static_cast-based conversions, especially
+    between simple data types, would be 
+    performed automatically by a good C++
+    compiler?
+
+    Yes, but you can have explicity cast.
+    For, other programmers see explicit cast and understand more.
+    >Yes True
+
+Exercises
+    1. BUG BUSTERS: What is the problem in the following code?
+        void DoSomething(Base* objBase)
+        {
+        Derived* objDer = dynamic_cast <Derived*>(objBase);
+        //check fo validity!
+        if(objDer) 
+            objDer->DerivedClassMethod();
+        }
+
+    2. You have pointer objFish* that points to object of class Tuna.
+
+        Fish* objFish = new Tuna;
+        Tuna* pTuna = <what cast?>objFish;
+
+        What cast would you use to get a 
+        pointer Tuna* point to this
+        object of type Tuna?
+        
+        Demonstrate using code.
+        GOTO two_exercise.cpp
+
+
+
