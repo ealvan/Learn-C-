@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/example/Vehicle.cpp
+Vehicle.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/example/Vehicle.h
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/example/Vehicle.h
+iostream
+-
+cinttypes
+-
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/example/main.cpp
+iostream
+-
+Vehicle.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/example/Vehicle.h
+
