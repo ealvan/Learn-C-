@@ -1,3 +1,0 @@
-/home/edsel_/learn/c++_learn/c++_learn/t.o/example/build/CMakeFiles/rebuild_cache.dir
-/home/edsel_/learn/c++_learn/c++_learn/t.o/example/build/CMakeFiles/edit_cache.dir
-/home/edsel_/learn/c++_learn/c++_learn/t.o/example/build/CMakeFiles/OOP-Intro.dir
