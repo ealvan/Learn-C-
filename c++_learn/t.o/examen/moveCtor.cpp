@@ -22,10 +22,10 @@ class Obj{
         }
         
 };
-void display(Obj src){
+void display(const Obj& src){
     cout << src.getName() <<endl;
 }
 int main(){
     Obj obj0("Hola");
-    display(obj0);
+    display({"Hello world C++"});
 }
