@@ -1,0 +1,34 @@
+naked pointers
+For naked pointers:
+they provide shallow or bitwise copying or assignment: 
+They just copy or assign the data members from the source object directly to the destination object.
+
+This is called a dangling pointer 
+	-Now s1 has a pointer which no longer points to valid memory. 
+------------------------------------------------------------------------
+orphaned the memory: when obj1 and obj2 points to the same memory but, s2 had a pointer memory orphante
+Orphaned memory = Memory leak
+Good Advice:
+Whenever you have dynamically allocated memory in a class, you
+should write your own copy constructor and assignment operator to provide a
+deep copy of the memory.
+
+Assignment Operator:
+. Thus, you must free any dynamically allocated memory before allocating new memory. You can think of an
+assignment operator as a combination of a destructor and a copy constructor. You are essentially
+“reincarnating” the object with new life (or data) when you assign to it.
+check for self-assignment
+
+Factor copy and assignment operator
+create an intermediate method copyFrom()
+
+Disallowing copy and assignment operator
+
+
+This self-assignment check
+
+-------------------------------------------------
+s. In fact, a static method is just like a regular
+function. The only difference is that it can access private and protected static data members of
+the class. It can also access private and protected non-static data members on objects
+of the same type,
