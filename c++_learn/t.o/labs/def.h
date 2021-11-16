@@ -7,13 +7,13 @@ public:
 template<typename T>
 class LinkedList{
     private:
-        Node<T> *head,*fin;
+        Node<T> *head,*fin;//para mantener el head
     public:
-        LinkedList();
-        void addNode(const T& data);
-        Node<T>* getHead(){ return head;  }
-        void display();
-        void deleteAll();
-        void deleteNodes(Node<T>* head);
+        LinkedList();//deafault constructor
+        void addNode(const T& data);//agregar un right value
+        Node<T>* getHead(){ return head;  }//para obtener la cabeza
+        void display();//imprimer la lista
+        void deleteAll();//borrar todo
+        void deleteNodes(Node<T>* head);//
         
 };
