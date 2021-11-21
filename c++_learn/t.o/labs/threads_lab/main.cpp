@@ -7,7 +7,7 @@
 
 using namespace std;
 pthread_mutex_t mutex;
-LinkedList lista;
+LinkedList lista;//global
 void* function(void* args){
     pthread_mutex_lock(&mutex);
     int cod = *(int*)args;
@@ -40,7 +40,6 @@ void* function(void* args){
         break;
         case 3:{
             //thread 3
-
             cout << "---------BUSCANDO---------"<<endl;
             int random = randomNumber(1,10);
             lista.buscar(random);
@@ -66,6 +65,8 @@ void* function(void* args){
         default:
         cout << "Error de operacion no autorizada"<<endl;
     };
+    cout << "LISTA ENLAZADA: "<<endl;
+    lista.display();
     pthread_mutex_unlock(&mutex);
     return nullptr;
 }

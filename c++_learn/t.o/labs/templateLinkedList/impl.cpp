@@ -44,6 +44,14 @@ void LinkedList<T>::deleteNodes(Node<T>* ptr){
     }
     delete(ptr);
 }
+template<typename T>
+void LinkedList<T>::insertToInit(const T& data){
+    Node<T>* node = new Node<T>;
+    node->data = data;
+    Node<T>* ptr = head;
+    node->next = ptr;
+    head = node;
+}
 int main(){
     LinkedList<int> lista;
     lista.addNode(1);
@@ -53,10 +61,12 @@ int main(){
     lista.display();
     lista.deleteAll();
     LinkedList<std::string>list1;
-    list1.addNode("hello");
-    list1.addNode("hola");
+    list1.addNode("Juan");
+    list1.addNode("George");
     list1.addNode("pepe");
     list1.addNode("jambie");
+    list1.display();
+    list1.insertToInit("Pedro");
     list1.display();
     list1.deleteAll();
 }

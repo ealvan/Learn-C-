@@ -15,5 +15,5 @@ class LinkedList{
         void display();//imprimer la lista
         void deleteAll();//borrar todo
         void deleteNodes(Node<T>* head);//
-        
+        void insertToInit(const T& data);
 };
