@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Examen.dir/main.cpp.o  -o Examen 

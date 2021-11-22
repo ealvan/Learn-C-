@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/Examen.dir/main.cpp.o CMakeFiles/Examen.dir/pixelrgb.cpp.o CMakeFiles/Examen.dir/pixelbn.cpp.o CMakeFiles/Examen.dir/imagen.cpp.o  -o Examen 

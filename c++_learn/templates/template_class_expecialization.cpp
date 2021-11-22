@@ -24,8 +24,7 @@ template<> class HoldsPair<int,int>{
         int b;
         string funMember;
     public:
-        HoldsPair(int a,int b)
-        :a(a),b(b){}
+        HoldsPair(int a,int b):a(a),b(b){}
         const int& getFirst() const{
             cout << "Retrieve First Value "<< a<<endl;
             return a;

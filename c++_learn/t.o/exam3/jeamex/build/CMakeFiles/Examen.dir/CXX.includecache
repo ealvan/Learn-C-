@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/imagen.cpp
+imagen.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/imagen.h
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/imagen.h
+vector
+-
+iostream
+-
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/main.cpp
+iostream
+-
+pixelrgb.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/pixelrgb.h
+imagen.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/imagen.h
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/pixelbn.cpp
+pixelbn.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/pixelbn.h
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/pixelbn.h
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/pixelrgb.cpp
+pixelrgb.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/pixelrgb.h
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/jeamex/pixelrgb.h
+

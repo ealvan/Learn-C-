@@ -17,7 +17,7 @@ class B:public A{
         B(const B& obj):A(obj){
             cout << "My Copy Constructor 'B'"<<endl;
         }
-        virtual void run() const{
+         void run() const{
             cout << "I am 'B'" << endl;
         }
 };
@@ -31,5 +31,4 @@ int main(){
     f1(B());// I am B
     f2(B());//My copy constructor 'A'
             // I am A
-
 }
