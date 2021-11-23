@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/examEd/src/main.cpp" "/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/examEd/build/CMakeFiles/Examen.dir/main.cpp.o"
+  "/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/main.cpp" "/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/build/CMakeFiles/run.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,0 +1,3 @@
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/build/CMakeFiles/rebuild_cache.dir
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/build/CMakeFiles/edit_cache.dir
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/build/CMakeFiles/run.dir

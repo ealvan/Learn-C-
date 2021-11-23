@@ -5,6 +5,12 @@ int main(){
     srand(time(NULL));
     // vector<vector<int>> matrix = (4,vector<int>(3,0));
 
+    // Img<int,Format::CMYK> hell(3,4);
+    // hell.fill();
+    // Img<int,Format::CMYK> halt(3,4);
+    // halt.fill();
+    // Img<int,Format::CMYK> koki = hell+halt;
+    
 
 
     Img<int,Format::RGB> hola(3,4);

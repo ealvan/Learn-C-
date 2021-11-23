@@ -1,4 +1,4 @@
-# Install script for directory: /home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/examEd/src
+# Install script for directory: /home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/examEd/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

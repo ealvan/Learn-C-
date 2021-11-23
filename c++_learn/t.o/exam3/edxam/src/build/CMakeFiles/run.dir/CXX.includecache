@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/imgDef.h
+pixelDef.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/pixelDef.h
+vector
+-
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/main.cpp
+imgDef.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/imgDef.h
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/exam3/edxam/src/pixelDef.h
+iostream
+-
+sstream
+-
+stdlib.h
+-
+time.h
+-
+
