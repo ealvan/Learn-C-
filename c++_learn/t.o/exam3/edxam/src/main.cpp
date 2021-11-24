@@ -11,18 +11,32 @@ int main(){
     // halt.fill();
     // Img<int,Format::CMYK> koki = hell+halt;
     
-
-
+    // Pixel<int,Format::RGB> p;
+    // p.fill();
+    // p.print();
+    // cout <<"---------------"<<endl;
     Img<int,Format::RGB> hola(3,4);
     hola.fill();
-    hola.print();
-    cout << "-----------------"<<endl;
-    Img<int,Format::RGB> hey(3,4);
-    hey.fill();
+    hola[0][0].print();
+    Img<int,Format::RGB> hello(3,4);
+    hello.fill();
+    hello[0][0].print();
+    // Pixel<int,Format::RGB> re = hello[0][0] +hola[0][0];
+    // re.print();
+    Img<int,Format::RGB> hey = hola + hello;
+    hey[0][0].print();
     hey.print();
-    cout << "-----------------"<<endl;
-    Img<int,Format::RGB> res = hola+hey;
-    res.print();
+    // hola.matrix[0][0].print();
+    // Pixel<int,Format::RGB> re = hola.matrix[0][0]+p;
+    // re.print();
+    // // hola.print();
+    // cout << "-----------------"<<endl;
+    // Img<int,Format::RGB> hey(3,4);
+    // hey.fill();
+    // hey.print();
+    // cout << "-----------------"<<endl;
+    // Img<int,Format::RGB> res = hola+hey;
+    // res.print();
 
     // Pixel<int,Format::RGB> p;
     // p.fill();
