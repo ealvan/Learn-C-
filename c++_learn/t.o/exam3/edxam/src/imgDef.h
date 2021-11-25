@@ -1,5 +1,6 @@
 #include "pixelDef.h"
 #include <vector>
+#include <thread>
 using std::vector;
 
 template<typename T, const int format=Format::RGB>
@@ -13,10 +14,12 @@ public:
     Img(int width,int height)
     :width(width),
     height(height),
-    matrix(width,vector<Pixel<T>>(height,Pixel<T,format>{})){
+    matrix(
+        width,
+        vector<Pixel<T,format>>(height,Pixel<T,format>{})){
         //explicitr constructor obligatorio
     }
-    auto& operator[](int index){
+    vector<Pixel<T,format>>& operator[](int index) {
         return matrix[index];
     }
     Img<T,format> operator+(const Img<T,format>& other){
@@ -26,13 +29,6 @@ public:
             for( int i = 0; i < width; ++i){
                 for(int j = 0; j < height; ++j){
                     nuevo.matrix[i][j] = matrix[i][j] + other.matrix[i][j];        
-                    // nuevo.matrix[i][j] = matrix[i][j] + nuevo.matrix[i][j];
-                    // for(int k = 0; k < format; ++k){
-                    //     nuevo.matrix[i][j].vals[k] = other.matrix[i][j].vals[k] + matrix[i][j].vals[k];
-                    // }
-                    // for(T& item : other.matrix[i][j].vals ){
-                    //     nuevo.matrix[i][j].
-                    // }
                 }
             }
         }
@@ -47,7 +43,7 @@ public:
                     // for(int k = 0; k < format; ++k){
                     //     nuevo.matrix[i][j].vals[k] = other.matrix[i][j].vals[k] - matrix[i][j].vals[k];
                     // }
-                    nuevo[i][j] = this->operator[](i)[j] + other[i][j];
+                    nuevo[i][j] = matrix[i][j] - other.matrix[i][j];
                 }
             }
         }
@@ -58,10 +54,7 @@ public:
         if(other.height==height && other.width == width){
             for( int i = 0; i < width; ++i){
                 for(int j = 0; j < height; ++j){
-                    //nuevo.matrix[i][j] = nuevo.matrix[i][j] * matrix[i][j];
-                    // for(int k = 0; k < format; ++k){
-                    //     nuevo.matrix[i][j].vals[k] = other.matrix[i][j].vals[k] * matrix[i][j].vals[k];
-                    // }
+                    nuevo[i][j] = matrix[i][j] * other.matrix[i][j];
                 }
             }
         }
@@ -72,7 +65,7 @@ public:
         //cout <<"Hello :"<< other.matrix[0][0].vals[0] << endl;
         for( int i = 0; i < width; ++i){
             for(int j = 0; j < height; ++j){
-                nuevo[i][j] = this->operator[](i)[j] + n;
+                nuevo[i][j] = matrix[i][j] + n;
             }
         }        
         return nuevo;        

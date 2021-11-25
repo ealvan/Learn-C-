@@ -56,6 +56,13 @@ public:
         }
         return nuevo;
     }
+    Pixel<T,format> operator+(const int n){
+        Pixel<T,format> nuevo;
+        for(int i = 0; i < format; i++){
+            nuevo.vals[i] = vals[i] +  n;
+        }
+        return nuevo;
+    }
     Pixel<T,format> operator-(Pixel<T,format> other){
         Pixel<T,format> nuevo;
         for(int i = 0; i < format; i++){

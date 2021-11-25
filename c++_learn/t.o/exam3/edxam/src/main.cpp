@@ -14,18 +14,23 @@ int main(){
     // Pixel<int,Format::RGB> p;
     // p.fill();
     // p.print();
-    // cout <<"---------------"<<endl;
-    Img<int,Format::RGB> hola(3,4);
+    Img<int,Format::CMYK> hola(3,4);
     hola.fill();
-    hola[0][0].print();
-    Img<int,Format::RGB> hello(3,4);
+    hola.print();
+    cout <<"---------------"<<endl;
+    Img<int,Format::CMYK> hello(3,4);
     hello.fill();
-    hello[0][0].print();
+    hello.print();
+    cout <<"---------------"<<endl;
+    Img<int,Format::CMYK> re = hola*hello;
+    re.print();
+
+
     // Pixel<int,Format::RGB> re = hello[0][0] +hola[0][0];
     // re.print();
-    Img<int,Format::RGB> hey = hola + hello;
-    hey[0][0].print();
-    hey.print();
+    // Img<int,Format::RGB> hey = hola + hello;
+    // hey[0][0].print();
+    // hey.print();
     // hola.matrix[0][0].print();
     // Pixel<int,Format::RGB> re = hola.matrix[0][0]+p;
     // re.print();
