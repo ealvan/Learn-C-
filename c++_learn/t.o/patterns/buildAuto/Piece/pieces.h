@@ -1,3 +1,4 @@
+#pragma once
 #include "planPiece.h"
 #include <sstream>
 #include <map>
@@ -25,7 +26,13 @@ public:
         format = output.str();
         return format.c_str();    
     }
-    void print() override{};
+    void print() override{
+        cout << "Pieza LLanta: "<<endl;
+        this->Piece::print();
+        cout << "\tPresion Max: "<<presionMax<<endl
+        <<"\tLimite de Carga: "<<limiteCarga<<endl
+        <<"\tTipo de Llanta: "<<tipo<<endl;
+    };
 };
 
 // ----------------------------------------------------------
@@ -39,7 +46,12 @@ public:
     :Piece(c,m,cos),ancho(anc),alto(alt)
     {
     }
-    void print() override{};
+    void print() override{
+        cout << "Pieza Ventana: "<<endl;
+        this->Piece::print();        
+        cout << "\tAncho: "<< ancho <<endl
+        <<"\tAlto: "<<alto<<endl; 
+    };
 };
 //---------------------------------------------------------------------
 class Motor: public Piece{
@@ -49,7 +61,12 @@ public:
     Motor() = default;
     Motor(Color c,Marca m, double cos,int cab)
     :Piece(c,m,cos),caballos(cab){}
-    void print() override{};
+
+    void print() override{
+        cout << "Pieza Motor: "<<endl;
+        this->Piece::print();        
+        cout << "\tCaballos de Fuerza: "<< caballos<<endl;
+    };
 };
 
 //---------------------------------------------------------------------
@@ -66,7 +83,11 @@ public:
     Asiento() = default;
     Asiento(Color c,Marca m, double cos,int cab,const char* desc)
     :Piece(c,m,cos),descripcion(mapa[m]){}
-    void print() override{};
+    void print() override{
+        cout << "Pieza Asiento: "<<endl;
+        this->Piece::print();        
+        cout <<"\tDescripcion: "<< descripcion<<endl;
+    };
 };
 //---------------------------------------------------------------------
 class Timon: public Piece{
@@ -76,7 +97,11 @@ public:
     Timon() = default;
     Timon(Color c,Marca m, double cos,int radio)
     :Piece(c,m,cos),radio(radio){}
-    void print() override{};
+    void print() override{
+        cout << "Pieza Timon: "<<endl;
+        this->Piece::print();        
+        cout << "\tRadio : "<< radio << endl;
+    };
 };
 //---------------------------------------------------------------------
 class Bateria: public Piece{
@@ -86,7 +111,11 @@ public:
     Bateria() = default;
     Bateria(Color c,Marca m, double cos,int lifetime)
     :Piece(c,m,cos),lifetime(lifetime){}
-    void print() override{};
+    void print() override{
+        cout << "Pieza Bateria: "<<endl;
+        this->Piece::print();        
+        cout << "Tiempo de vida:"<<lifetime<<endl;
+    };
 };
 //---------------------------------------------------------------------
 class Alternador: public Piece{
@@ -98,7 +127,9 @@ public:
     Alternador(Color c,Marca m, double cos,int longPolea,int regula)
     :Piece(c,m,cos),longPolea(longPolea),reguladorVolt(regula){}
     void print() override{
-        cout << "Polea: "<< longPolea<<endl;
+        cout << "Pieza Alternador: "<<endl;
+        this->Piece::print();        
+        cout << "\tPolea: "<< longPolea<<endl;
     }
 };
 

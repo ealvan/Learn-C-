@@ -1,1 +1,1 @@
-/usr/bin/c++     CMakeFiles/AutoBuilder.dir/main.cpp.o CMakeFiles/AutoBuilder.dir/Piece/piece.cpp.o  -o AutoBuilder 
+/usr/bin/c++     CMakeFiles/AutoBuilder.dir/main.cpp.o CMakeFiles/AutoBuilder.dir/Piece/piece.cpp.o CMakeFiles/AutoBuilder.dir/BuilderAuto/builder.cpp.o  -o AutoBuilder 

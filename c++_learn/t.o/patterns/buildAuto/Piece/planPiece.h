@@ -1,5 +1,8 @@
+#pragma once
 #include <iostream>
 #include <vector>
+#include <time.h>
+#include <stdlib.h>
 /*
 Un auto tiene
 Motor
@@ -49,7 +52,12 @@ public:
     int getColor(){
         return color;
     }
-    virtual void print(){};
+    virtual void print(){
+        cout <<"\tColor: "<<color<<endl
+        << "\tMarca: "<<marca<<endl
+        <<"\tCosto: "<<costo<<endl;
+
+    };
 };
 
 

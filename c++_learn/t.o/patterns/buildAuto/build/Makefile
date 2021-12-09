@@ -136,6 +136,33 @@ Auto/fast:
 	$(MAKE) -f Auto/CMakeFiles/Auto.dir/build.make Auto/CMakeFiles/Auto.dir/build
 .PHONY : Auto/fast
 
+BuilderAuto/builder.o: BuilderAuto/builder.cpp.o
+
+.PHONY : BuilderAuto/builder.o
+
+# target to build an object file
+BuilderAuto/builder.cpp.o:
+	$(MAKE) -f CMakeFiles/AutoBuilder.dir/build.make CMakeFiles/AutoBuilder.dir/BuilderAuto/builder.cpp.o
+.PHONY : BuilderAuto/builder.cpp.o
+
+BuilderAuto/builder.i: BuilderAuto/builder.cpp.i
+
+.PHONY : BuilderAuto/builder.i
+
+# target to preprocess a source file
+BuilderAuto/builder.cpp.i:
+	$(MAKE) -f CMakeFiles/AutoBuilder.dir/build.make CMakeFiles/AutoBuilder.dir/BuilderAuto/builder.cpp.i
+.PHONY : BuilderAuto/builder.cpp.i
+
+BuilderAuto/builder.s: BuilderAuto/builder.cpp.s
+
+.PHONY : BuilderAuto/builder.s
+
+# target to generate assembly for a file
+BuilderAuto/builder.cpp.s:
+	$(MAKE) -f CMakeFiles/AutoBuilder.dir/build.make CMakeFiles/AutoBuilder.dir/BuilderAuto/builder.cpp.s
+.PHONY : BuilderAuto/builder.cpp.s
+
 Piece/piece.o: Piece/piece.cpp.o
 
 .PHONY : Piece/piece.o
@@ -200,6 +227,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... AutoBuilder"
 	@echo "... Auto"
+	@echo "... BuilderAuto/builder.o"
+	@echo "... BuilderAuto/builder.i"
+	@echo "... BuilderAuto/builder.s"
 	@echo "... Piece/piece.o"
 	@echo "... Piece/piece.i"
 	@echo "... Piece/piece.s"

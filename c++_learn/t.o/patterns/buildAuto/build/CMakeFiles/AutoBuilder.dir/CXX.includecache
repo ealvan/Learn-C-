@@ -12,6 +12,10 @@ vector
 ../Piece/pieces.h
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Piece/pieces.h
 
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/BuilderAuto/builderAuto.h
+../Auto/auto.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Auto/auto.h
+
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Piece/pieces.h
 planPiece.h
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Piece/planPiece.h
@@ -25,10 +29,14 @@ iostream
 -
 vector
 -
+time.h
+-
+stdlib.h
+-
 
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/main.cpp
 iostream
 -
-./Auto/auto.h
-/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Auto/auto.h
+./BuilderAuto/builderAuto.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/BuilderAuto/builderAuto.h
 

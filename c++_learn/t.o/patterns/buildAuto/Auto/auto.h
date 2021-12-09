@@ -8,15 +8,35 @@ protected:
     Marca marca;
     std::vector<Piece*> items;
 public:
-    Automovil(){};
+    Automovil() = default;
 
+    Automovil(const Automovil& autom){
+        cout << "Copy ctor"<<endl;
+        marca = autom.marca;
+        for(int i = 0; i < autom.items.size(); ++i){
+            this->items.push_back(autom.items[i]);
+        }
+    }
     void addItem(Piece* item){
         items.push_back(item);
     }
+
     std::vector<Piece*> getItems(){
         return items;
     }
+    void print(){
+        cout << "PRINT auto"<<endl;
+        if(items.size() > 0)
+            for(auto& item: items){
+                item->print();
+            }
+    }
     ~Automovil(){
-        
+        for(auto& item: items){
+            delete item;
+        }
     }
 };
+//-----------------------------------------------------------
+
+

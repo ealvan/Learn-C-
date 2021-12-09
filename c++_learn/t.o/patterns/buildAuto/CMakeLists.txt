@@ -23,7 +23,11 @@ target_sources(${PROJECT_NAME} PRIVATE
 target_sources(${PROJECT_NAME} PRIVATE 
     ${PROJECT_SOURCE_DIR}/Auto/auto.h
 )
-
+#BuilderAuto Folder
+target_sources(${PROJECT_NAME} PRIVATE 
+    ${PROJECT_SOURCE_DIR}/BuilderAuto/builderAuto.h
+    ${PROJECT_SOURCE_DIR}/BuilderAuto/builder.cpp
+)
 # target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 # target_include_directories(${PROJECT_NAME} PUBLIC Auto)
