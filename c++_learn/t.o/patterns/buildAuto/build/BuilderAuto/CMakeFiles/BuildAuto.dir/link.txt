@@ -1,0 +1,2 @@
+/usr/bin/ar qc libBuildAuto.a  CMakeFiles/BuildAuto.dir/builder.cpp.o
+/usr/bin/ranlib libBuildAuto.a

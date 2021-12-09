@@ -1,0 +1,1 @@
+add_library(Auto auto.h auto.cpp)

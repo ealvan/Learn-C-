@@ -1,0 +1,1 @@
+add_library(BuildAuto builderAuto.h builder.cpp)
