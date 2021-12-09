@@ -3,3 +3,6 @@
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/build/CMakeFiles/AutoBuilder.dir
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/build/Piece/CMakeFiles/rebuild_cache.dir
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/build/Piece/CMakeFiles/edit_cache.dir
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/build/Auto/CMakeFiles/rebuild_cache.dir
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/build/Auto/CMakeFiles/edit_cache.dir
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/build/Auto/CMakeFiles/Auto.dir

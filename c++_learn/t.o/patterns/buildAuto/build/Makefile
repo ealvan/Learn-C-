@@ -123,6 +123,19 @@ AutoBuilder/fast:
 	$(MAKE) -f CMakeFiles/AutoBuilder.dir/build.make CMakeFiles/AutoBuilder.dir/build
 .PHONY : AutoBuilder/fast
 
+#=============================================================================
+# Target rules for targets named Auto
+
+# Build rule for target.
+Auto: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Auto
+.PHONY : Auto
+
+# fast build rule for target.
+Auto/fast:
+	$(MAKE) -f Auto/CMakeFiles/Auto.dir/build.make Auto/CMakeFiles/Auto.dir/build
+.PHONY : Auto/fast
+
 Piece/piece.o: Piece/piece.cpp.o
 
 .PHONY : Piece/piece.o
@@ -186,6 +199,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... AutoBuilder"
+	@echo "... Auto"
 	@echo "... Piece/piece.o"
 	@echo "... Piece/piece.i"
 	@echo "... Piece/piece.s"

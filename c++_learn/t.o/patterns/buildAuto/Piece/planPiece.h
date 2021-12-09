@@ -1,3 +1,5 @@
+#include <iostream>
+#include <vector>
 /*
 Un auto tiene
 Motor
@@ -7,6 +9,13 @@ Color
 Marca
 costo
 */
+using std::cout;
+using std::endl;
+using std::string;
+using std::vector;
+
+// using std::map;
+
 enum Color{
     BLACK,
     RED,
@@ -37,6 +46,10 @@ public:
     void setCosto(double c){
         costo = c;
     }
+    int getColor(){
+        return color;
+    }
+    virtual void print(){};
 };
 
 

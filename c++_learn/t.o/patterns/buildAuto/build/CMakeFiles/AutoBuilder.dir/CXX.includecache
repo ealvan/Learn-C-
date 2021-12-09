@@ -6,5 +6,29 @@
 
 #IncludeRegexTransform: 
 
-/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Piece/piece.cpp
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Auto/auto.h
+vector
+-
+../Piece/pieces.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Piece/pieces.h
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Piece/pieces.h
+planPiece.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Piece/planPiece.h
+sstream
+-
+map
+-
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Piece/planPiece.h
+iostream
+-
+vector
+-
+
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/main.cpp
+iostream
+-
+./Auto/auto.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Auto/auto.h
 

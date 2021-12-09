@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD 20)
 add_executable(${PROJECT_NAME} ${PROJECT_SOURCE_DIR}/main.cpp)
 
 add_subdirectory(Piece)
-
+add_subdirectory(Auto)
 # target_include_directories(${PROJECT_NAME} PUBLIC Piece)
 # target_link_libraries(${PROJECT_NAME}  Piece)
 target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
@@ -19,6 +19,12 @@ target_sources(${PROJECT_NAME} PRIVATE
     ${PROJECT_SOURCE_DIR}/Piece/pieces.h
     ${PROJECT_SOURCE_DIR}/Piece/piece.cpp
 )
+#Auto Folder
+target_sources(${PROJECT_NAME} PRIVATE 
+    ${PROJECT_SOURCE_DIR}/Auto/auto.h
+)
+
+# target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 # target_include_directories(${PROJECT_NAME} PUBLIC Auto)
 # target_link_libraries(${PROJECT_NAME}  Auto)

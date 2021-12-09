@@ -3,6 +3,7 @@
 
 CMakeFiles/AutoBuilder.dir/Piece/piece.cpp.o: ../Piece/piece.cpp
 
+CMakeFiles/AutoBuilder.dir/main.cpp.o: ../Auto/auto.h
 CMakeFiles/AutoBuilder.dir/main.cpp.o: ../Piece/pieces.h
 CMakeFiles/AutoBuilder.dir/main.cpp.o: ../Piece/planPiece.h
 CMakeFiles/AutoBuilder.dir/main.cpp.o: ../main.cpp
