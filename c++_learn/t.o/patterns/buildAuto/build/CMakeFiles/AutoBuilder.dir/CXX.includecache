@@ -16,6 +16,10 @@ vector
 ../Auto/auto.h
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Auto/auto.h
 
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Director/director.h
+../BuilderAuto/builderAuto.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/BuilderAuto/builderAuto.h
+
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Piece/pieces.h
 planPiece.h
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Piece/planPiece.h
@@ -37,6 +41,6 @@ stdlib.h
 /home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/main.cpp
 iostream
 -
-./BuilderAuto/builderAuto.h
-/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/BuilderAuto/builderAuto.h
+./Director/director.h
+/home/edsel_/learn/c++_learn/c++_learn/t.o/patterns/buildAuto/Director/director.h
 
