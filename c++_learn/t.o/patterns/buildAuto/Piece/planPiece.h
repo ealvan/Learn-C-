@@ -58,6 +58,9 @@ public:
         <<"\tCosto: "<<costo<<endl;
 
     };
+    virtual ~Piece(){
+        //destructor virtual
+    }
 };
 
 
