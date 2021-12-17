@@ -25,7 +25,7 @@ public:
         return items;
     }
     void print(){
-        cout << "PRINT auto"<<endl;
+        cout << "Imprimendo Piezas ...."<<endl;
         if(items.size() > 0)
             for(auto& item: items){
                 item->print();

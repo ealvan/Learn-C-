@@ -5,12 +5,12 @@
 #include <stdlib.h>
 /*
 Un auto tiene
-Motor
-LLantas
-------------
-Color
-Marca
-costo
+    Motor
+    LLantas
+    ------------
+    Color
+    Marca
+    costo
 */
 using std::cout;
 using std::endl;
@@ -56,7 +56,6 @@ public:
         cout <<"\tColor: "<<color<<endl
         << "\tMarca: "<<marca<<endl
         <<"\tCosto: "<<costo<<endl;
-
     };
     virtual ~Piece(){
         //destructor virtual

@@ -61,7 +61,7 @@ public:
         buildLlanta();
         buildVentana();
         buildMotor();
-        buildAsiento(6);
+        buildAsiento(2);
         buildTimon();
         buildBateria();
         buildAlternador();
