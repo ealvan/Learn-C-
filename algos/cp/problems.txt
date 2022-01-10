@@ -1,0 +1,11 @@
+bubble sort
+merge sort
+counting sort
+sort() function and comparison Functions
+Sort problems:
+	is this set unique? problem True or false
+	Sweep Line Algorithms: customer arriving and leaves the restaurant
+	scheduling events: events with starting and finish 
+	bynary search
+	k jobs - n machines 
+  

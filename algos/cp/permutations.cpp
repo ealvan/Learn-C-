@@ -56,9 +56,20 @@ void search(){
             permutations.pop_back();
         }
     }
-
+}
+#include <algorithm>
+void nextPermutationinCPP(){
+    vector<int> vect = {2,3,1,4};
+    std::sort(vect.begin(),vect.end());
+    int i = 1;
+    do{
+        cout << i << "  "; 
+        print(vect);
+        ++i;
+    }while(std::next_permutation(vect.begin(),vect.end()));
 }
 
+
 int main(){
-    search();
+    nextPermutationinCPP();
 }
