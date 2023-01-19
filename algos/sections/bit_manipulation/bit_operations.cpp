@@ -54,6 +54,18 @@ void BIT_shifts(){
         num = num << 1;
     }
     cout << endl;
+    //***********************************************************
+    unsigned char a = 0x01;
+    int shifts = 4;
+    unsigned char b = 0x01 << shifts;
+    printf("%02hhx -> 1 << %d = %02hhx\n",a,shifts, b);
+    //***********************************************************
+    int x = -1;
+    for(int k = 31; k>=0; k--){
+        if(x&(1<<k)) cout << "1";
+        else cout << "0";
+    }    
+    cout << "\n";
 }
 
 int main(){
