@@ -1,6 +1,11 @@
 Useful resource:
 https://www2.lawrence.edu/fast/GREGGJ/CMSC270/bitOperations.html#:~:text=The%20C%2B%2B%20language%20does%20not,a%20group%20of%208%20bits.
 
+Useful website to see aplications of bits:
+https://www.learncpp.com/cpp-tutorial/bit-manipulation-with-bitwise-operators-and-bit-masks/
+
+
+
 C++ use hexadecimal notation to manipulate bits:
 
 Digit	Bit Equivalent
