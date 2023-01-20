@@ -1,0 +1,12 @@
+O notation: O(n)
+These are the most common O -notations in algorithms:
+
+O(1) -> Constant time, Doesn't depend of the input size.
+O(log N) -> Often halves the input size.
+O(srqt(N)) -> Special property sqrt(N) = sqrt(N)/N
+O(N) -> Goes throught the input
+O(N log N) -> Often indicates the algorithm sorts the input.
+O(N^2) -> Often two nested loops, thorught all pairs of the input elements
+O(N^3) -> Often three nested loops, throught all triplets of the input elements
+O(2^N) -> Often indicates that algorithm goes throught all subsets of the input element.
+O(N!) -> The algorithm iterates throught all permutations of the input elements.
