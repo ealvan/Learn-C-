@@ -78,7 +78,7 @@ void best_solution_v3(int a[N]){
     }
     cout << "BEST_SOLUTION_V3:\nThe maximu-subarray is: "<< global_max << endl;
 }
-
+//OVERFLOW -> OF INTEGERS
 void rest(int a, int b){
     if((a-b) >= (a+b)){
         cout << "It's overflow\n";
@@ -133,6 +133,7 @@ void test(){
     // bitset<32> number4{mmin};
     // cout << number4 << endl;
 }
+//MAIN FUNCTION
 int main(){
     int array[N] = { -5, 3, INT_MAX, 2, 1};
     brute_force(array);
