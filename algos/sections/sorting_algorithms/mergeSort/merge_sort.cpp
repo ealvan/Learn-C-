@@ -106,7 +106,6 @@ array<int,NN> mergeSort(array<int,NN> &nms){
 
 
 
-
 int main(){
     const size_t items = 19;
     array<int,items> nms = {1,4,3,7,3,8,2,8,3,5,3,54,6,8,967,2,1,2,0};
