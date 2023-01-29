@@ -36,7 +36,6 @@ void binary_search_jumping(array<int,N>& arr, int x){
             cout << "Entering k: "<< k <<" b: "<< b <<" arr[k+b]= "<<arr[k+b]<< "<= x: "<< x <<endl;
             k += b;
             cout << "Entering k: "<< k <<" b: "<< b <<" arr[k+b]= "<<arr[k+b]<< "<= x: "<< x <<endl;
-
         }
     }
     cout << "\nk: "<<k << " b: "<<b<<endl;
