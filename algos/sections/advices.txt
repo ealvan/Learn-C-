@@ -1,0 +1,25 @@
+A hint by a real competitive programmer:
+Good day to you,
+
+Firstly, this is HARD KIND of question, since it is not directly on CP but slightly on "psychology"/"learning" which might be different for different people (so question is whether programmers are the right people to answer this question). Also, as you can see, my progress is not that good so maybe it would be better to ask some red-coder (or nutela).
+
+Here is the text I typically use for such kind of question so hope you'll find something in it:
+
+In first place, one need obtain knowledge in basic algorithms: There are many algorithms which are not hard, yet it is hard to do even medium (sometime easy) problems without them. Starting from dfs/bfs/sieve/graph-algos/sorting/....(many many other). So find some way to learn them. Usually, find some good blod (codeforces/geeksforgeeks/some school's lectures/so on..).
+
+While doing the above, one has to catch some coding/debugging concepts. Afterward it is imho good to do many easy (at most medium) problems to improve coding skills. Even though many people undeestimate this, it is very important to get to phase where you can code what you know (well, it might sound stupid, but many times one know a solution one hour before end of contest, yet he ends coding 10 minutes before end when he starts his 20 minute debugging phase [and both could be significantly reduced])
+
+As one improves (hopefully), he must start doing harder and harder problems and soon with the harder problems, he must lear also advanced algorithms: Suffix Array/HLD/Segment Trees/...(and many many others) which are usually not "that" necessary for easier problems.
+
+Also during all phases, it is good (even thougt one spends a lot of time by coding) spend some time by reading:
+
+a) New algorithms helpful things b) Editorials for what one doesn't know (firstly THINK about the problems and if nothing come, search for solution. Sometime one just find he's "stupid" but many times one discovers "new amazing" techniques)
+
+Also sometimes it is interesting to peek to solution of others... even (or maybe BEST) after you solve the problem. Sometimes there is much better solution then you came with, sometimes there is something awesome (like algorithmic/or/language trick) which might simplify your futher coding.
+
+Also sometimes it is good to "measure twice, cut once"... thinking for a while even if you know the solution. Sometime you find improvement, or reduce it by redundant part..
+
+anyway... solve solve solve ~ that it what I usually do :)
+
+Good Luck & Wish you a Nice Day!
+
