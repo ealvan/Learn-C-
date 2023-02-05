@@ -1,0 +1,49 @@
+Amazon Interview Offcampus
+June – July 2022
+
+🎙️How I Applied?
+I applied via a referral. I received a phone call from the recruiter who asks me about my current location and interests.
+
+Number of Rounds: 4
+Verdict: Selected
+
+
+🎙️Hiring Process :
+Online Assessment Round
+Technical Interview Round 1
+Technical Interview Round 2
+Hiring Manager Interview
+
+Online Assessment Round: Platform- HackerRank.
+
+🎙️Assessment consists of two sections:
+Coding Challenge – It consists of two easy coding problems that you need to solve in 105 minutes alongwith explaining the approach and time complexity. I don’t remember the exact problems, but the topic covered was generally arrays(insertion in sorted array using binary search, sorting array based on a condition).
+
+🎙️Amazon Work Style Survey – This takes approx. 10-15 minutes to be completed and contains questions to assess your work ethics and principles. It also tests how you approach work in general and whether you are a good fit for the company as per Amazon Leadership Principles. Each question consists of two parts where you have to choose from options like most like me, somewhat like me, etc.
+
+The next day I received a mail that I successfully passed the online assessment round and got information about the next three rounds along with some preparatory materials and tips. My next two rounds were scheduled on the same day with a gap of around 3-4 hours between them.
+🎙️Technical Round 1 (60 minutes): Initially, the interviewer introduced himself and asked me to do the same. Then he asked me to explain a situation where I learned something new or from scratch. This discussion took 5 minutes. After that interviewer jumped to the coding question.
+
+🎙️Question 1:  Devise a sorting algorithm
+
+I started with a brute force algorithm and the interviewer asked me to think of an optimized way. After some hints, I was able to solve it using heap and wrote the code for the same. I accidentally made a mistake which I corrected on a dry run myself. 
+
+🎙️Question 2: 
+leetcode.com/problems/race-car/
+
+I tried to write a DP solution but wasn’t able to come up with a working solution. The interviewer provide some hints but I wasn’t able to connect the dots. Due to question 2, I got negative feedback from this round.
+
+🎙️Technical Round 2 (60 minutes): After introducing each other, the interviewer jumps to the coding problems.
+
+🎙️Question 1: The problem was a simple one based on hash maps and I was able to provide 3-4 different ways to solve the problem. Then interviewer slightly modified some conditions, but after some time I came up with an optimized approach.
+
+🎙️Question 2:  Slight variant of Burn the binary tree
+
+I was able to solve it but quoted a wrong time complexity initially. After coding problems, as there was still some time, I asked the interviewer about the company and the project they work on. After 2-3 days, I was told that I can proceed with the next round.
+Hiring Manager Interview (45 minutes): I received a mail to provide some preferable slots for this round. The interview was scheduled after a week. After introducing himself, he asked me some questions about the projects I had worked on till now. After this discussion, the interviewer asked me to solve two simple problems, but he asked me to focus on code quality and that the code should be somewhat similar to a production-ready code.
+
+I initially wrote a naive working code and modified it later to a clean one. The interviewer asked me to dry run the code and explained the approach. After coding problems, he asked me to ask something I wanted. The interview ended after discussing some Amazon products and their work culture.
+
+Results were declared after some days and I was selected.
+
+Source Credits : Anonymous on GeeksforGeeks
